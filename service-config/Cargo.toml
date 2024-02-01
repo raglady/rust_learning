@@ -1,0 +1,18 @@
+[package]
+name = "service_config"
+version = "0.1.0"
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+authors.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+config = { version = "0.13.4", features = [] }
+serde = "1.0.196"
+dirs = { version = "5.0.1", features = [] }
+serde_yaml = { version = "0.9.30", features = [] }
+serde-aux = "4.4.0"
+log = { version = "0.4.20", features = ["serde"] }

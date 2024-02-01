@@ -1,0 +1,21 @@
+[package]
+name = "migration"
+version = "0.1.0"
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "migration"
+path = "src/lib.rs"
+
+[dependencies]
+async-std = { version = "1", features = ["attributes", "tokio1"] }
+chrono = "0.4.31"
+entity = {path = "../entity"}
+uuid = { version = "1.5.0", features = ["v4"] }
+
+[dependencies.sea-orm-migration]
+version = "0.12.10"
+features = ["sqlx-mysql", "sqlx-postgres", "sqlx-sqlite", "runtime-async-std-rustls"]

@@ -1,0 +1,27 @@
+
+[workspace]
+resolver = "2"
+members = [
+    "api",
+    "common",
+    "entity",
+    "migration",
+    "server", "service-config",
+    "service-local"
+]
+
+[workspace.package]
+license = "MIT OR Apache-2.0"
+edition = "2021"
+rust-version = "1.73.0"
+publish = false
+authors = ["RANDRIANASOLO Falihery Emile <falihery.randrianasolo@gmail.com>"]
+
+[profile.dev]
+# Disabling debug info speeds up builds a bunch and we don't rely on it for debugging that much.
+debug = 0
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1

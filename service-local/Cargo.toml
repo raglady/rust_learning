@@ -1,0 +1,17 @@
+[package]
+name = "services_local"
+version = "0.1.0"
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+common = { path = "../common" }
+async-trait = "0.1.77"
+chrono = "0.4.31"
+entity = { path = "../entity" }
+uuid = { version = "1.6.1", features = ["v4"] }
+sea-orm = "0.12.11"

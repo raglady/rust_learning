@@ -1,0 +1,4 @@
+[env]
+CONFIG_DIR = { value = ".", relative = true }
+DATA_DIR = { value = "data", relative = true }
+APP_NAME = { value = "rust_learning", force = true }

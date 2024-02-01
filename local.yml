@@ -1,0 +1,14 @@
+---
+application:
+  host: "127.0.0.1"
+  port: 8000
+  loglevel: "DEBUG" # one of : TRACE, DEBUG, INFO, WARN, ERROR
+
+database:
+  driver: "sqlite" # one of: sqlite, mysql, postgresql
+  path: "db.sqlite"
+#  host: "127.0.0.1"
+#  port: 5432
+#  username: "example"
+#  password: "example"
+#  name: "example"

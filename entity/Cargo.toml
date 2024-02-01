@@ -1,0 +1,17 @@
+[package]
+name = "entity"
+version = "0.1.0"
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.31"}
+sea-orm = { version = "0.12.4", features = ["sqlx-postgres", "sqlx-sqlite", "sqlx-mysql", "runtime-async-std-rustls"] }
+serde = { version = "1.0.190", features = ["derive"] }
+common = { path = "../common" }
+async-trait = "0.1.77"
+uuid = { version = "1.6.1", features = ["v4"] }
